@@ -1,0 +1,32 @@
+GOLD OPERATION WORKFLOW: SHAKARDARA PLACER MINING OPERATION
+
+1. Excavation Phase
+- Deposit Geological Context: Alluvial placer gold deposits along the Indus River basin, particularly in Shakardara. Gold is concentrated in the gravel/sand layer sitting directly above bedrock (the "pay layer").
+- Excavation Strategy: Mid-to-large hydraulic excavators (20-30 ton class) dig through overburden (top silt and barren gravel) to reach the pay layer at maximum depth.
+- Material Handling: Excavated material is directly loaded into dump trucks or tractor trolleys for continuous transport to the washing line.
+- Continuous Digging Cycle: 24-hour operation running two 12-hour shifts. Soil removal must be coordinated to prevent pit wall collapse and river seepage.
+
+2. Washing & Gravity Separation Phase
+- Water Supply & Feeding: Water is drawn via 500-meter pipeline sections directly from the Indus River using high-volume pumps. Water must flow continuously across wash tables.
+- Wash Line Construction: Heavy timber or steel sluice boxes lined with marble slabs for uniform hydraulic gradient, covered with specialized ribbed gold-trapping carpets (miners' moss / unbacked vinyl loop carpets).
+- Cycle Durations:
+  * Big Plant Setup: Runs continuous 4-hour wash cycles before stopping for carpet cleanup. Suitable for large throughput and high gravel volume.
+  * Small Plant Setup: Runs 1.5-hour wash cycles before cleanup. Better suited for smaller batches and tighter manual control.
+- Mechanism: Turbulent slurry flows over carpets; heavy gold particles (density ~19.3 g/cm³) sink into carpet grooves while lighter river sand and gravel (density ~2.6-3.0 g/cm³) wash out as tailings.
+
+3. Carpet Cleanup & Concentration
+- Carpet Washing in Tubs ("Tup"): At the end of each cycle (1.5h or 4h), the water feed is throttled. Workers carefully roll up carpets and rinse them vigorously in large galvanized or plastic wash tubs known locally as "tup".
+- Black Sand Concentrate: The resulting slurry contains heavy black sands (magnetite, hematite, zircon) along with fine placer gold flakes, flour gold, and occasional nuggets.
+- Panning / Shaking: Secondary manual panning or spiral wheel separation reduces the bulk concentrate volume before chemical amalgamation.
+
+4. Mercury Amalgamation & Sponge Gold Recovery
+- Karigar Role: Performed exclusively by an experienced amalgamation specialist (Karigar).
+- Chemical Process: Liquid elemental mercury (quicksilver) is added to the concentrated black sand in a shallow pan. Mercury selectively wets and alloys with gold to form a silvery semi-solid paste (gold amalgam).
+- Squeezing: Excess liquid mercury is squeezed through a dense cotton or chamois cloth, leaving behind a firm amalgam ball (approximately 40-50% gold, 50-60% mercury).
+- Heating / Retorting: The amalgam ball is heated with a blowtorch to vaporize the mercury (boiling point 356.7°C), leaving behind porous, unrefined "sponge gold".
+- Recovery Rates: Efficient amalgamation recovers 70-85% of fine gold trapped in the concentrate, though micron-scale flour gold can be lost if water flow was too turbulent.
+
+5. Health, Safety, and Environmental Protocols
+- Toxic Mercury Vapors: Inhaling mercury vapor poses severe neurotoxic and kidney hazards to the karigar and bystanders. Heating MUST be performed with a sealed retort with water-cooled condenser or downwind with respiratory protection.
+- River Protection: Crucial mandate to keep all amalgamation, washing, and heating activities at least 100 meters away from the active Indus riverbank and water channels to avoid heavy metal contamination of downstream drinking and agricultural water supplies.
+- Tailings Management: Tailings must be settled in retention ponds rather than dumped directly back into the river channel to prevent siltation and ecological disruption.

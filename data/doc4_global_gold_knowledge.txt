@@ -1,0 +1,55 @@
+GLOBAL GOLD MINING INDUSTRY: METHODS, GEOLOGY, METRICS, AND REGULATORY FRAMEWORKS
+
+1. Global Gold Geology and Placer Deposits
+- Placer vs. Lode Gold: Primary gold deposits (lode or hard rock) form through hydrothermal fluid circulation in volcanic and metamorphic rock belts. Over millions of years, weathering and tectonic erosion break down native quartz-gold veins. Water currents transport and naturally sort these heavy particles along riverbeds, creating alluvial or "placer" deposits.
+- Hydrodynamic Sorting & Gravity Principles:
+  * Gold Specific Gravity: ~19.3 g/cm³ (pure) to 15.0-18.0 g/cm³ (electrum alloy with silver).
+  * Common River Gangue Minerals: Quartz (2.65 g/cm³), Feldspar (2.56 g/cm³), Calcite (2.71 g/cm³).
+  * Heavy Black Sands: Magnetite (5.17 g/cm³), Hematite (5.26 g/cm³), Zircon (4.65 g/cm³).
+  * Because gold is approximately 7 to 8 times denser than typical river gravel, hydraulic flow in sluices fluidizes the gravel bed, allowing gold flakes to drop rapidly into the carpet fibers while water velocity sweeps away lighter sands.
+
+2. Global Production Leaders and Mining Scales
+- Top Gold Producing Countries:
+  1. China (~370-380 tonnes/year)
+  2. Australia (~310-330 tonnes/year)
+  3. Russia (~300-320 tonnes/year)
+  4. Canada (~200 tonnes/year)
+  5. United States (~170 tonnes/year)
+  6. Ghana (~130 tonnes/year - Africa's largest producer)
+  7. Mali, Peru, Uzbekistan, Indonesia (Grasberg deposit).
+- Global Annual Output: Total worldwide mine production hovers around 3,600 to 3,650 metric tonnes annually. Recycled gold contributes an additional 1,100 to 1,200 tonnes.
+- Artisanal and Small-Scale Gold Mining (ASGM): Accounts for roughly 20% of global gold supply and employs over 15 million miners across 80+ countries worldwide (Latin America, Africa, South Asia).
+
+3. Metallurgical Units, Purity, and Conversions
+- Mass Measurements:
+  * Troy Ounce: Exactly 31.1034768 grams (standard international precious metals measure; distinctly heavier than an avoirdupois ounce of 28.35 g).
+  * Tola: Traditional South Asian unit equals exactly 11.6638 grams (commonly used in Pakistan and India bullion markets; 1 Tola = 180 troy grains).
+  * Metric Tonne: 1,000 kilograms = 32,150.7 troy ounces.
+- Karat Purity Standards:
+  * 24-Karat (24K): 99.9% purity (Millesimal Fineness: 999 or 999.9) - Investment-grade bullion.
+  * 22-Karat (22K): 91.67% purity (Millesimal Fineness: 916) - Common in traditional jewelry.
+  * 18-Karat (18K): 75.0% purity (Millesimal Fineness: 750).
+  * Raw Sponge Gold: Placer gold post-retorting typically registers between 18K and 22K (75-90% purity) before hydrometallurgical or pyrometallurgical refining due to natural silver alloying and trace impurities.
+
+4. Financial Metrics: All-In Sustaining Costs (AISC)
+- World Gold Council Standard: All-In Sustaining Cost (AISC) is the definitive industry benchmark measuring total ongoing operational expenditure required to produce one ounce/gram of gold over time.
+- AISC Formula Components:
+  * Cash Costs (On-site mining, labor, fuel, power, consumables, onsite administration).
+  * Royalties and production taxes.
+  * Sustaining capital expenditures (machinery overhaul, replacement carpets, maintenance).
+  * Environmental rehabilitation and site reclamation accruals.
+- Global Industry AISC Average: Ranging from $1,250 to $1,450 per troy ounce (~$40 to $47 per gram equivalent in USD).
+
+5. Global Environmental Standards & Mercury Phase-Out
+- Minamata Convention on Mercury: A legally binding international treaty (negotiated under UNEP) ratified by over 140 countries. Key objectives:
+  * Eliminate the use of whole-ore mercury amalgamation.
+  * Ban open-air burning of gold amalgams without vapor condenser retorts.
+  * Prohibit mercury discharge into active river systems and wetlands.
+- Non-Toxic Alternatives in Placer Mining:
+  * Gravity concentration enhancement: Centrifugal concentrators (Knelson/Falcon bowls) achieving >95% recovery without chemicals.
+  * Borax Method: Using sodium tetraborate (borax) as a flux to lower the melting point of gold concentrates for direct crucible smelting, eliminating mercury entirely while increasing karigar health and profit margins.
+
+6. International Bullion Pricing Mechanisms
+- LBMA Gold Price: London Bullion Market Association twice-daily electronic auction (10:30 AM and 3:00 PM GMT) setting the global reference price in USD, EUR, and GBP.
+- COMEX Gold Futures: High-liquidity futures contracts traded via the Chicago Mercantile Exchange (CME) dictating forward derivative curves.
+- Sovereign Reserves: Over 35,000 tonnes of physical gold are held by central banks globally (led by the US Federal Reserve, Bundesbank, IMF, and Bank of Italy) as non-defaultable monetary reserves.

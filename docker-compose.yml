@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  aurisearch:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aurisearch-gold-rag
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.0-flash}
+      # Allows container to reach Ollama running on your Windows host machine:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-phi3:latest}
+      - RATE_LIMIT_REQUESTS=40
+      - RATE_LIMIT_WINDOW_SECONDS=60
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      # Persist ChromaDB vector index across container restarts
+      - ./chroma_db:/app/chroma_db
+      # Mount data folder so new text files can be added and hot-ingested
+      - ./data:/app/data
+    restart: unless-stopped

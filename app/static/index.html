@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuriSearch — Placer Gold Mining RAG & Voice Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-top"></div>
+  <div class="ambient-glow ambient-bottom"></div>
+
+  <!-- Header Section -->
+  <header class="header-container">
+    <div class="brand">
+      <div class="brand-emblem">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div>
+        <h1 class="brand-title">AURI<span>SEARCH</span></h1>
+        <p class="brand-subtitle">Placer Gold Geological & Financial RAG Engine</p>
+      </div>
+    </div>
+
+    <div class="system-status-pills">
+      <div class="status-pill" id="dbStatusPill">
+        <span class="status-dot online"></span>
+        <span id="dbStatusText">Vector DB: 4 Docs</span>
+      </div>
+      <div class="status-pill" id="shieldPill">
+        <span class="shield-icon">🛡️</span>
+        <span>Anti-Crash Active</span>
+      </div>
+      <div class="status-pill" id="enginePill">
+        <span class="engine-icon">⚡</span>
+        <span id="engineBadge">Gemini / Ollama</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    
+    <!-- Hero / Voice Assistant Orb -->
+    <section class="voice-assistant-section">
+      <div class="orb-container">
+        <div class="orb-ring ring-3"></div>
+        <div class="orb-ring ring-2"></div>
+        <div class="orb-ring ring-1"></div>
+        <button id="micBtn" class="voice-orb" title="Click to speak your gold mining query">
+          <svg class="mic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            <line x1="12" y1="19" x2="12" y2="23"></line>
+            <line x1="8" y1="23" x2="16" y2="23"></line>
+          </svg>
+          <div class="waveform-bars">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </button>
+      </div>
+      <p id="voiceStatus" class="voice-status-text">Click the golden orb to speak or type your question below</p>
+    </section>
+
+    <!-- Search Input Form -->
+    <section class="search-section">
+      <form id="searchForm" class="search-box">
+        <div class="search-icon-left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <input 
+          type="text" 
+          id="queryInput" 
+          placeholder="Ask anything (e.g. Big plant net profit, diesel consumption, Shakardara lease sites)..." 
+          autocomplete="off"
+        />
+        <button type="button" id="clearBtn" class="clear-btn" style="display:none;" title="Clear">✕</button>
+        <button type="submit" id="submitBtn" class="search-submit-btn">
+          <span>Search RAG</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </form>
+
+      <!-- Quick Prompt Suggestion Chips -->
+      <div class="prompt-chips">
+        <span class="chips-label">Explore Shakardara & Global:</span>
+        <button class="chip" data-query="What is the daily net profit and output of a Big Plant in Shakardara?">💰 Big Plant Profitability</button>
+        <button class="chip" data-query="How much diesel does an excavator and tractor consume per day?">🚜 Diesel & Machinery Usage</button>
+        <button class="chip" data-query="What are the six leased sites in Shakardara and who owns the lease?">📍 Leased Sites Overview</button>
+        <button class="chip" data-query="Explain the karigar's mercury amalgamation process and daily rate.">⚗️ Karigar & Mercury Safety</button>
+        <button class="chip" data-query="What are the water supply pipe specs from the Indus River?">🌊 Indus Water Pipeline</button>
+        <button class="chip" data-query="What is the global AISC metric for gold and how is purity measured?">🌍 Global AISC & 24K Purity</button>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultsSection" class="results-section" style="display: none;">
+      
+      <!-- AI Answer Card -->
+      <div class="answer-card">
+        <div class="card-header">
+          <div class="engine-info">
+            <span class="badge-gold" id="responseEngine">Google Gemini 2.0</span>
+            <span class="badge-metric" id="responseLatency">⚡ 280ms</span>
+          </div>
+          <div class="action-buttons">
+            <button id="speakBtn" class="btn-icon" title="Listen to response (TTS)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              <span>Listen</span>
+            </button>
+            <button id="copyBtn" class="btn-icon" title="Copy answer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="user-query-recap">
+          <span class="query-prefix">Query:</span>
+          <span id="recapQueryText"></span>
+        </div>
+
+        <div id="answerContent" class="answer-content">
+          <!-- Markdown Answer Injected Here -->
+        </div>
+      </div>
+
+      <!-- Verified Grounded Sources -->
+      <div class="sources-card">
+        <h3 class="sources-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          Vector Grounding Sources (ChromaDB Top-K Chunks)
+        </h3>
+        <div id="sourcesGrid" class="sources-grid">
+          <!-- Source Cards Injected Here -->
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Defensive Shield Telemetry Card -->
+    <section class="telemetry-bar">
+      <div class="telemetry-item">
+        <span class="telemetry-label">Ingested Data</span>
+        <span class="telemetry-val">Shakardara Placer & Global Metals</span>
+      </div>
+      <div class="telemetry-item">
+        <span class="telemetry-label">Local Fallback</span>
+        <span class="telemetry-val">Ollama 0.40.0 Enabled</span>
+      </div>
+      <div class="telemetry-item">
+        <span class="telemetry-label">Defensive Guard</span>
+        <span class="telemetry-val" style="color: #4ade80;">XSS / Injection Shield Active</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>AuriSearch Gold Mining Intelligence Engine • Grounded RAG Architecture • Enterprise Grade</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
