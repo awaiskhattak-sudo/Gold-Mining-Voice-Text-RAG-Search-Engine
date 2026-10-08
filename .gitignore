@@ -1,0 +1,28 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets & Environment Variables (NEVER commit API keys!)
+.env
+.env.local
+
+# ChromaDB Vector Database Cache & Data
+chroma_db/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker logs
+*.log
